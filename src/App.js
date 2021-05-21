@@ -11,7 +11,7 @@ function App() {
   useEffect(()=>{
     const fetchItems = ()=>{
       setLoading(true);
-      axios.get(`https://cors-anywhere.herokuapp.com/https://www.breakingbadapi.com/api/characters?name=${query}`).then(res=>{
+      axios.get(`https://www.breakingbadapi.com/api/characters?name=${query}`).then(res=>{
         setItems(res.data);
         setLoading(false);
       });
